@@ -41,6 +41,6 @@ Sistem, Flormar ürün kataloğundan seçilen temel makyaj malzemelerini içerme
 ---
 
 ### 👨‍💻 ÖDEV BİLGİSİ
-Bu proje, **Güz Dönemi ÖDEV-4** kapsamında web geliştirme yetkinliklerini sergilemek amacıyla hazırlanmıştır.
+Bu proje, **Bahar Dönemi ÖDEV-4** kapsamında web geliştirme yetkinliklerini sergilemek amacıyla hazırlanmıştır.
 
 ---
