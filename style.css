@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+/* Ürünler */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.product-card {
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #e60073;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* SEPET PANELİ */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.cart-panel.active {
+    right: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart-item button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.close-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+/* Hover’da resim efekti */
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.cart-item img {
+    border-radius: 5px;
+}

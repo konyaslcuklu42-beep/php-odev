@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ödeme Sayfası</title>
+    <link rel="stylesheet" href="odeme.css">
+</head>
+<body>
+
+<div class="payment-container">
+    <h1>💳 Ödeme Bilgileri</h1>
+
+    <form onsubmit="completePayment(event)">
+        <label>Kart Üzerindeki İsim</label>
+        <input type="text" placeholder="Ad Soyad" required>
+
+        <label>Kart Numarası</label>
+        <input type="text" placeholder="1234 5678 9012 3456" required>
+
+        <div class="row">
+            <div>
+                <label>Son Kullanma</label>
+                <input type="text" placeholder="AA/YY" required>
+            </div>
+            <div>
+                <label>CVV</label>
+                <input type="password" placeholder="123" required>
+            </div>
+        </div>
+
+        <label>
+            <input type="checkbox" required>
+            Mesafeli satış sözleşmesini kabul ediyorum
+        </label>
+
+        <button type="submit">Ödemeyi Tamamla</button>
+    </form>
+
+    <div class="success" id="success">
+        ✅ Ödeme başarıyla tamamlandı (Taslak)
+    </div>
+</div>
+
+<script src="odeme.js"></script>
+</body>
+</html>

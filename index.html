@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Flormar Sepet Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="odeme.html">
+    <button>Ödemeye Geç</button>
+</a>
+</head>
+<body>
+
+<header>
+    <h1>FLORMAR</h1>
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 Sepet (<span id="cart-count">0</span>)
+    </div>
+</header>
+
+<section class="products">
+    <div class="product-card">
+        <h3>Flormar Ruj</h3>
+        <img src="resimler/ruj.webp">
+        <h3>Flormar Ruj</h3>
+        <p>₺299</p>
+        <button onclick="addToCart('Flormar Ruj',199 ,'resimler/ruj.webp')">Sepete Ekle</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Flormar Fondöten</h3>
+        <img src="resimler/fondöten.webp">
+        <p>₺199</p>
+        <button onclick="addToCart('Flormar Fondöten',249,'resimler/fondöten.webp')">Sepete Ekle</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Flormar Allık</h3>
+        <img  src="resimler/flormar allık.webp">
+        <p>₺99</p>
+        <button onclick="addToCart('Flormar Allık',149,'resimler/flormar allık.webp')">Sepete Ekle</button>
+    </div>
+
+     <div class="product-card">
+        <h3>Flormar Göz Kalemi</h3>
+        <img src="resimler/göz kalemi1.webp">
+        <p>₺50</p>
+        <button onclick="addToCart('Flormar Allık',149,'resimler/göz kalemi1.webp')">Sepete Ekle</button>
+    </div>
+
+     <div class="product-card">
+        <h3>Flormar Maskara</h3>
+        <img src="resimler/maskara.webp">
+        <p>₺299</p>
+        <button onclick="addToCart('Flormar Allık',149,'resimler/maskara.webp')">Sepete Ekle</button>
+    </div>
+</section>
+
+<!-- SEPET PANELİ -->
+<div class="cart-panel" id="cart-panel">
+    <h2>🛒 Sepetim</h2>
+    <div id="cart-items"></div>
+    <h3>Toplam: ₺<span id="total-price">0</span></h3>
+    <button class="close-btn" onclick="toggleCart()">Kapat</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
